@@ -633,6 +633,122 @@ section {
   font-size: 0.85rem;
 }
 
+/*============================================*/
+/* Experience Section */
+/*============================================*/
+.experience {
+  background-color: var(--color-bg-secondary);
+}
+
+.experience-section {
+  margin-top: 5rem;
+  padding-top: 3rem;
+  border-top: 1px solid var(--color-border);
+}
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.experience-card {
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: 36px;
+  padding: 2rem;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.experience-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.icon-blue {
+  background-color: rgba(71, 133, 255, 0.1);
+  color: var(--color-primary);
+}
+
+.icon-red {
+  background-color: rgba(255, 95, 86, 0.1);
+  color: var(--color-red);
+}
+
+.icon-yellow {
+  background-color: rgba(255, 189, 46, 0.1);
+  color: var(--color-yellow);
+}
+
+.icon-green {
+  background-color: rgba(39, 201, 63, 0.1);
+  color: var(--color-green);
+}
+
+.experience-links {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.experience-link {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-bg-tertiary);
+  color: var(--color-text-light);
+  transition: all 0.3s;
+}
+
+.experience-link:hover {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.experience-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--color-text);
+}
+
+.experience-card p {
+  color: var(--color-text-light);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.experience-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.experience-tag {
+  background-color: var(--color-bg-tertiary);
+  color: var(--color-text-light);
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+
+/* CTF Section */
 .ctf-section {
   margin-top: 5rem;
   padding-top: 3rem;
@@ -687,85 +803,53 @@ section {
 }
 
 
-.contact {
-  background-color: var(--color-bg-secondary);
-}
+/* ============================================ */
+/* Contact Cards (CTF-style) */
+/* ============================================ */
 
-.contact-content {
+.contact-grid {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  gap: 4rem;
-}
-
-.contact-info {
-  display: flex;
-  flex-direction: column;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+  margin-top: 3rem;
 }
 
-.contact-item {
-  display: flex;
-  gap: 1rem;
-  align-items: flex-start;
-}
-
-.contact-item svg {
-  color: var(--color-primary);
-  flex-shrink: 0;
-  margin-top: 0.25rem;
-}
-
-.contact-item h4 {
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 0.25rem;
-  color: var(--color-text);
-}
-
-.contact-item p {
-  color: var(--color-text-light);
-  font-size: 0.95rem;
-}
-
-.contact-form {
-  background-color: var(--color-bg);
+.contact-card {
+  background-color: var(--color-bg-secondary);
   border: 1px solid var(--color-border);
-  border-radius: 12px;
-  padding: 2.5rem;
-}
-
-.form-group {
-  margin-bottom: 1.5rem;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-weight: 500;
-  color: var(--color-text);
-}
-
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 0.75rem 1rem;
-  border: 1px solid var(--color-border);
-  border-radius: 8px;
-  font-size: 1rem;
-  font-family: var(--font-sans);
+  border-radius: 36px;
+  padding: 2rem;
+  text-align: center;
   transition: all 0.3s;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(71, 133, 255, 0.1);
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-.form-group textarea {
-  resize: vertical;
+.contact-icon {
+  font-size: 2.2rem;
+  margin-bottom: 0.75rem;
+  color: var(--color-primary);
 }
+
+.contact-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+}
+
+.contact-card p {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  word-break: break-all;
+}
+
+
+
 
 .footer {
   background-color: var(--color-text);
@@ -793,6 +877,8 @@ section {
   color: rgba(255, 255, 255, 0.7);
   font-size: 0.9rem;
 }
+
+
 
 @media (max-width: 1024px) {
   .hero-content {
@@ -827,11 +913,15 @@ section {
     grid-template-columns: 1fr;
   }
 
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+
   .ctf-grid {
     grid-template-columns: 1fr;
   }
 
-  .contact-content {
+  .contact-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -885,11 +975,19 @@ section {
     grid-template-columns: 1fr;
   }
 
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+
   .skills-grid {
     grid-template-columns: 1fr;
   }
 
   .terminal-certs-body {
+    grid-template-columns: 1fr;
+  }
+
+    .contact-grid {
     grid-template-columns: 1fr;
   }
 
