@@ -669,17 +669,23 @@ section {
 .experience-icon {
   width: 64px;
   height: 64px;
-  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 1.5rem;
 }
 
-.icon-blue {
+.experience-logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+/* .icon-blue {
   background-color: rgba(71, 133, 255, 0.1);
   color: var(--color-primary);
-}
+} */
 
 .icon-red {
   background-color: rgba(255, 95, 86, 0.1);
@@ -846,6 +852,24 @@ section {
   font-size: 0.9rem;
   color: var(--color-text-light);
   word-break: break-all;
+}
+
+.contact-button {
+  transition-duration: 0.4s;
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  padding: 0.5rem 1rem;
+  border-radius: 36px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.contact-button:hover {
+  background-color: var(--color-primary);
+  color: white;
+  border: 2px solid var(--color-primary);
 }
 
 
