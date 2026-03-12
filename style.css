@@ -134,26 +134,6 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
-  overflow: hidden; /* add this */
-}
-
-.hero-right {
-  position: relative;
-  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-  overflow: hidden;
-  max-width: 500px;
-  max-height: 600px;
-  width: 100%;
-  aspect-ratio: 4/5;
-}
-
-.hero-right img {
-  width: 100%;
-  height: 100%;
-  radius: 50%;
-  object-fit: cover;
-  object-position: center top;
-  display: block;
 }
 
 .hero-left {
@@ -272,15 +252,8 @@ body {
 }
 
 .avatar {
-  border-radius: 50%;
-  border-color: #4285F4;
-  border-width: 5px;
-  border-style: solid;
-}
-.terminal {
-.avatar {
-  width: 350px;
-  height: 350px;
+  width: 550px;
+  height: 550px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center top;
@@ -288,6 +261,11 @@ body {
   border-width: 5px;
   border-style: solid;
 }
+.terminal {
+  background-color: var(--color-terminal-bg);
+  border-radius: 36px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
 }
 
 .terminal-header {
