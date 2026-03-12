@@ -134,6 +134,25 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
+  overflow: hidden; /* add this */
+}
+
+.hero-right {
+  position: relative;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  overflow: hidden;
+  max-width: 500px;
+  max-height: 600px;
+  width: 100%;
+  aspect-ratio: 4/5;
+}
+
+.hero-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
 }
 
 .hero-left {
